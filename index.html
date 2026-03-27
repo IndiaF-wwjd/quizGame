@@ -10,31 +10,23 @@
 		<link rel="stylesheet" href="styles/style.css">
 	</head>
 	<body>
-		<form class="container">
+		<main class="container">
 			<section class="start screen" id="startScreen">
 				<h1>Quiz!</h1>
 				<p>Let's see what you know about color theory.</p>
 				<button id="startButton">Start</button>
 			</section>
-			
-			<article class="quiz screen" id="quizScreen">
-				
-				<form class="quiz header">
+			<section class="quiz screen" id="quizScreen">
+				<header class="quiz info">
 					<h2 id="question">Question</h2>
-					<form class="quiz info">
-						<p>
-							Question <span id="current question">1</span> of <span>5</span></p>
-						
-						<p>Score: <span id="score">0</span></p>
-					</form>
-				</form>
-				
-				<article class= "answers" id="answers">
+					<p>Question <span id="currentQuestion">1</span> of <span>5</span></p>
+					<p>Score: <span id="score">0</span></p>
+				</header>
+				<div class= "answers" id="answers">
 					<!-- Insert answer buttons here from JS-->
-				</article>
-				
+				</div>
 				<progress id="progress" value="1" max="5"></progress>
-			</article>
+			</section>
 			<section class="results screen" id="resultsScreen">
 				<h1>Quiz Results</h1>
 				<section class="the results">
@@ -43,6 +35,6 @@
 				</section>
 				<button id="restartButton">Restart Quiz</button>
 			</section>
-		</form>
+		</main>
 	</body>
 </html>
