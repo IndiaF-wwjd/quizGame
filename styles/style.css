@@ -59,4 +59,42 @@ body {
 	padding: 1rem;
 	cursor: pointer;
 	text-align: left;
+	transition: all 0.3s ease;
+}
+.answer.btn:hover {
+	background-color: #8DC4FE;
+	border-color: #429DFD;
+}
+.answer.btn.correct {
+	background-color: #ECFFDC;
+	border-color: #DFFF00;
+	color: #7CFC00;
+}
+.answer.btn.incorrect {
+	background-color: #FFE6E6;
+	border-color: #FFB8B8;
+	color: #FF2E2E;
+}
+progress {
+	height: 10px;
+	background-color: #EFF7FF;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-top: 20px;
+}
+.progress.bar {
+	height: 100%;
+	background-color: #3B9AFD;
+	width: 0%;
+	transition: width 0.3s ease;
+}
+.result.screen h1 {
+	color: #3B9AFD;
+	margin-bottom: 30px;
+}
+.the.results {
+	background-color: #E6F2FF;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 30px;
 }
