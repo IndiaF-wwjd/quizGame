@@ -11,30 +11,31 @@
 	</head>
 	<body>
 		<main class="container">
-			<section class="start screen" id="startScreen">
+			<section class="start screen active" id="startScreen">
 				<h1>Quiz!</h1>
 				<p>Let's see what you know about color theory.</p>
 				<button id="startButton">Start</button>
 			</section>
 			<section class="quiz screen" id="quizScreen">
-				<header class="quiz info">
+				<header class="quiz-info">
 					<h2 id="question">Question</h2>
-					<p>Question <span id="currentQuestion">1</span> of <span>5</span></p>
+					<p>Question <span id="currentQuestion">1</span> of <span id="totalQuestions">5</span></p>
 					<p>Score: <span id="score">0</span></p>
 				</header>
 				<div class= "answers" id="answers">
 					<!-- Insert answer buttons here from JS-->
 				</div>
-				<progress class= "progress bar" id="progress" value="1" max="5"></progress>
+				<progress id="progress" value="1" max="5"></progress>
 			</section>
 			<section class="results screen" id="resultsScreen">
 				<h1>Quiz Results</h1>
 				<section class="the results">
 					<p>You scored <span id="finalScore">0</span> out of <span id="maxScore">5</span></p>
-					<section id="resultMessage">Good job!</section>
+					<p id="resultMessage">Good job!</p>
 				</section>
 				<button id="restartButton">Restart Quiz</button>
 			</section>
 		</main>
+		<script src="scripts/quizGame.js"></script>
 	</body>
 </html>
